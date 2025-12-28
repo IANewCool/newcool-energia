@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Energia - NewCooltura Informada",
+  title: "Energia Electrica Chile | NewCooltura Informada",
   description: "Buscador de distribuidoras electricas, tarifas, calculadora de consumo y subsidios de energia en Chile",
+  keywords: ["energia Chile", "tarifas electricas", "calculadora consumo", "subsidio electricidad", "cortes luz"],
+  openGraph: {
+    title: "Energia Electrica Chile - NewCooltura Informada",
+    description: "Tarifas, consumo y subsidios electricos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
